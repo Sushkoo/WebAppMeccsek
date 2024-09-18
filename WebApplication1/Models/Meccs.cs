@@ -4,7 +4,7 @@ namespace WebApplication1.Models
 {
     public class Meccs()
     {
-        public int Id { get; set; }
+      public int Id { get; set; }
         public int Fordulo { get; set; }
         public int hazaiVeg { get; set; }
         public int vendegVeg { get; set; }
