@@ -10,8 +10,8 @@ using WebApplication1.Models;
 namespace WebApplication1.Migrations
 {
     [DbContext(typeof(FociDbContext))]
-    [Migration("20240916070528_sqlite.local_migration_308")]
-    partial class sqlitelocal_migration_308
+    [Migration("20240919080537_sqlite.local_migration_750")]
+    partial class sqlitelocal_migration_750
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,24 +28,22 @@ namespace WebApplication1.Migrations
                     b.Property<int>("Fordulo")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("hazaiCsapatnev")
-                        .IsRequired()
+                    b.Property<string>("HazaiCsapat")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("hazaiGolFelidoben")
+                    b.Property<int>("HazaiFelido")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("hazaiVeg")
+                    b.Property<int>("HazaiVeg")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("vendegCsapatnev")
-                        .IsRequired()
+                    b.Property<string>("VendegCsapat")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("vendegGolFelidoben")
+                    b.Property<int>("VendegFelido")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("vendegVeg")
+                    b.Property<int>("VendegVeg")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");

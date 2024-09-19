@@ -6,11 +6,11 @@ namespace WebApplication1.Models
     {
       public int Id { get; set; }
         public int Fordulo { get; set; }
-        public int hazaiVeg { get; set; }
-        public int vendegVeg { get; set; }
-        public int hazaiGolFelidoben { get; set; }
-        public int vendegGolFelidoben { get; set; }
-        public string hazaiCsapatnev { get; set; }
-        public string vendegCsapatnev { get; set; }
+        public int HazaiVeg { get; set; }
+        public int VendegVeg { get; set; }
+        public int HazaiFelido { get; set; }
+        public int VendegFelido { get; set; }
+        public string? HazaiCsapat { get; set; }
+        public string? VendegCsapat { get; set; }
     }
 }

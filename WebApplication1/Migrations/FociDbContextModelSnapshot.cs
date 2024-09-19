@@ -25,24 +25,22 @@ namespace WebApplication1.Migrations
                     b.Property<int>("Fordulo")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("hazaiCsapatnev")
-                        .IsRequired()
+                    b.Property<string>("HazaiCsapat")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("hazaiGolFelidoben")
+                    b.Property<int>("HazaiFelido")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("hazaiVeg")
+                    b.Property<int>("HazaiVeg")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("vendegCsapatnev")
-                        .IsRequired()
+                    b.Property<string>("VendegCsapat")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("vendegGolFelidoben")
+                    b.Property<int>("VendegFelido")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("vendegVeg")
+                    b.Property<int>("VendegVeg")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");

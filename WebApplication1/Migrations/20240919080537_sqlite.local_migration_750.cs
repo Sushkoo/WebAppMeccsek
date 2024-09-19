@@ -5,7 +5,7 @@
 namespace WebApplication1.Migrations
 {
     /// <inheritdoc />
-    public partial class sqlitelocal_migration_308 : Migration
+    public partial class sqlitelocal_migration_750 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,12 +17,12 @@ namespace WebApplication1.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Fordulo = table.Column<int>(type: "INTEGER", nullable: false),
-                    hazaiVeg = table.Column<int>(type: "INTEGER", nullable: false),
-                    vendegVeg = table.Column<int>(type: "INTEGER", nullable: false),
-                    hazaiGolFelidoben = table.Column<int>(type: "INTEGER", nullable: false),
-                    vendegGolFelidoben = table.Column<int>(type: "INTEGER", nullable: false),
-                    hazaiCsapatnev = table.Column<string>(type: "TEXT", nullable: false),
-                    vendegCsapatnev = table.Column<string>(type: "TEXT", nullable: false)
+                    HazaiVeg = table.Column<int>(type: "INTEGER", nullable: false),
+                    VendegVeg = table.Column<int>(type: "INTEGER", nullable: false),
+                    HazaiFelido = table.Column<int>(type: "INTEGER", nullable: false),
+                    VendegFelido = table.Column<int>(type: "INTEGER", nullable: false),
+                    HazaiCsapat = table.Column<string>(type: "TEXT", nullable: true),
+                    VendegCsapat = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
